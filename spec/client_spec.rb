@@ -1,3 +1,5 @@
+require 'rubygems'
+require 'test/unit'
 require 'vcr'
 require_relative '../lib/client'
 
