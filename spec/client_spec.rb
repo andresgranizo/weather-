@@ -1,3 +1,4 @@
+require 'rubygems'
 require 'VCR'
 require_relative '../lib/client'
 
