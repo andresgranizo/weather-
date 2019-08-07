@@ -1,11 +1,23 @@
-
+# Weather Client
 
 [![CircleCI](https://circleci.com/gh/andresgranizo/weather-.svg?style=shield)](https://circleci.com/gh/andresgranizo/weather-)
 
-This is an exercise to explore the functions of API .
+This command line permits to query the weather of any given city.
 
-## How to test it?
+## Setup
+
+```
+bundle install
+```
+
+## Usage
+
+```
+ruby app.rb --city Latacunga
+```
+
+## Run tests
 
 ```RB
-rspec specs
+rspec
 ```
