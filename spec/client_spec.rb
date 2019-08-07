@@ -1,5 +1,5 @@
 require 'rubygems'
-require 'VCR'
+require 'vcr'
 require_relative '../lib/client'
 
 VCR.configure do |config|
