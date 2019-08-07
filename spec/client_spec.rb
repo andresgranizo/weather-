@@ -1,5 +1,3 @@
-require 'rubygems'
-require 'test/unit'
 require 'VCR'
 require_relative '../lib/client'
 
