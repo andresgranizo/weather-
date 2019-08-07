@@ -1,5 +1,7 @@
+require 'byebug'
 require 'rubygems'
 require 'vcr'
+
 require_relative '../lib/client'
 
 VCR.configure do |config|
@@ -11,9 +13,9 @@ end
 describe Client do
   it 'queries the weather for a given location' do
     VCR.use_cassette("weather") do
+      byebug
       client  = Client.new
-      weather = client.query('Latacunga')
-      puts weather
+      weather = client.query('latacunga')
       expect(weather.main['temp']).to eq(17.28)
     end
   end

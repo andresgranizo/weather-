@@ -8,7 +8,8 @@ gem 'rest-client'
 gem 'dotenv'
 
 group :test, :development do
-  gem "rspec"
+  gem 'byebug'
+  gem 'rspec'
   gem 'rspec_junit_formatter'
   gem 'vcr'
   gem 'webmock'
