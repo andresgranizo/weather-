@@ -1,4 +1,3 @@
-require 'byebug'
 require 'rubygems'
 require 'vcr'
 
@@ -13,10 +12,9 @@ end
 describe Client do
   it 'queries the weather for a given location' do
     VCR.use_cassette("weather") do
-      byebug
       client  = Client.new
       weather = client.query('latacunga')
-      expect(weather.main['temp']).to eq(17.28)
+      expect(weather.main['temp']).to eq(14.21)
     end
   end
 end

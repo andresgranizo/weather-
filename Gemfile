@@ -8,7 +8,6 @@ gem 'rest-client'
 gem 'dotenv'
 
 group :test, :development do
-  gem 'byebug'
   gem 'rspec'
   gem 'rspec_junit_formatter'
   gem 'vcr'
